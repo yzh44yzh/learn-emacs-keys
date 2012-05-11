@@ -97,28 +97,26 @@ var sets = [
     ]},
 
     {id:"Guru Set", items:[
-C-x z
-M-{, 
-M-}, 
-C-x [, 
-C-x ], 
-C-x DEL   backward-kill-sentence
-M-- C-M-k
-C-x TAB
-C-x C-v 
-C-x C-q
-C-M-o
-M-@  mark-word
-C-x C-p  mark-page
-M-$
-M-!, 
-M-|, 
-C-u M-|
-C-x =
-C-q quoted-insert
-C-x C-n, 
-C-u C-x C-n
-C-M-w  append-next-kill
+	"C-x z",   "repeat",
+	"M-{",     "backward-paragraph",
+	"M-}",     "forward-paragraph",
+	"C-x [",   "backward-page",
+	"C-x ]",   "forward-page",
+	"C-x DEL", "backward-kill-sentence",
+	"M--",     "negative-argument",
+	"C-x TAB", "indent-rigidly",
+	"C-x C-v", "find-alternate-file", "replace active buffer",
+	"C-x C-q", "toggle-read-only",
+	"C-M-o",   "split-line",
+	"M-@",     "mark-word",
+	"C-x C-p", "mark-page",
+	"M-$",     "ispell-word",
+	"M-!",     "shell-command",
+	"M-|",     "shell-command-on-region",
+	"C-x =",   "what-cursor-position",
+	"C-q",     "quoted-insert",
+	"C-x C-n", "set-goal-column",
+	"C-M-w",   "append-next-kill"
     ]},
 
     {id:"erlang-mode", items:[

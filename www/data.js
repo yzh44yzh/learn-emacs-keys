@@ -120,24 +120,24 @@ var sets = [
     ]},
 
     {id:"erlang-mode", items:[
-M-l      indent-for-comment - Insert a comment character to the right of the code 
-C-c C-q  erlang-indent-function - Indents the current Erlang function.
-M-q      erlang-fill-paragraph (comments)
-C-c C-c  comment-region
-C-c C-u  undo comment-region
-C-a M-a  erlang-beginning-of-function 
-C-a M-e  erlang-end-of-function
-C-M-a    erlang-beginning-of-clause
-C-M-e    erlang-end-of-clause 
-C-c M-h  erlang-mark-function
-C-M-h    erlang-mark-clause 
-C-c C-j  erlang-generate-new-clause
-C-c C-y  erlang-clone-arguments
-C-c C-a  erlang-align-arrows
-C-c C-z, erlang-shell-display
-C-c C-k, erlang-compile 
-C-c C-l, erlang-compile-display
-C-x `    erlang-next-error 
+	"M-l",     "indent-for-comment", "insert comment to the end",
+	"C-c C-q", "erlang-indent-function",
+	"M-q",     "erlang-fill-paragraph", "in comments",
+	"C-c C-c", "comment-region",
+	"C-c C-u", "undo comment-region",
+	"C-a M-a", "erlang-beginning-of-function",
+	"C-a M-e", "erlang-end-of-function",
+	"C-M-a",   "erlang-beginning-of-clause",
+	"C-M-e",   "erlang-end-of-clause",
+	"C-c M-h", "erlang-mark-function",
+	"C-M-h",   "erlang-mark-clause",
+	"C-c C-j", "erlang-generate-new-clause",
+	"C-c C-y", "erlang-clone-arguments",
+	"C-c C-a", "erlang-align-arrows",
+	"C-c C-z", "erlang-shell-display",
+	"C-c C-k", "erlang-compile",
+	"C-c C-l", "erlang-compile-display",
+	"C-x `",   "erlang-next-error"
     ]},
 
     {id:"Minibuffer", items:[

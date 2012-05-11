@@ -141,29 +141,29 @@ var sets = [
     ]},
 
     {id:"Minibuffer", items:[
-C-g  quit
-C-o  open-line
-M-p  previous-history-element
-M-n  next-history-element
-M-r  previous-matching-history-element
-M-s  next-matching-history-element
-TAB  minibuffer-complete
-SPC  minibuffer-complete-word
-RET  minibuffer-complete-and-exit
-?    minibuffer-completion-help
-C-x ESC ESC  repeat-complex-command
+	"C-g", "quit",
+	"C-o", "open-line",
+	"M-p", "previous-history-element",
+	"M-n", "next-history-element",
+	"M-r", "previous-matching-history-element",
+	"M-s", "next-matching-history-element",
+	"TAB", "minibuffer-complete",
+	"SPC", "minibuffer-complete-word",
+	"RET", "minibuffer-complete-and-exit",
+	"?",   "minibuffer-completion-help",
+	"C-x ESC ESC", "repeat-complex-command"
     ]},
 
     {id:"Help", items:[
-C-h t
-C-h C-h  help-for-help
-C-h a    apropos-command
-C-h c    describe-key-briefly
-C-h k
-C-h f
-C-h m
-C-h v
-C-h .  display-local-help
+	"C-h t", "help-with-tutorial",
+	"C-h C-h", "help-for-help",
+	"C-h a", "apropos-command",
+	"C-h c", "describe-key-briefly",
+	"C-h k", "describe-key",
+	"C-h f", "describe-function",
+	"C-h m", "describe-mode",
+	"C-h v", "describe-variable",
+	"C-h .", "display-local-help"
     ]},
 
 // Registers  page 81

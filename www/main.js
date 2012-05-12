@@ -1,24 +1,21 @@
 $(document).ready(function() {
-    showSelectedSets();
+    WorkingSet.init(showSelectedSets());
 });
-
 
 function showSelectedSets() {
     var temp = [];
     for(var i = 0; i < sets.length; i++) {
 	var set = sets[i];
 	for(var j = 0; j < set.items.length; j++) {
+	    if(set.id != "erlang-mode" && set.id != "Minibuffer") continue;
 	    var item = set.items[j];
 	    var nItem = item.slice(0);
 	    nItem.unshift(set.id);
 	    temp.push(nItem);
 	}
-	break;
     }
 
-    var showItems = shuffle(temp);
-    console.log(temp);
-    console.log(showItems);
+    return shuffle(temp);
 }
 
 function shuffle(arr) {

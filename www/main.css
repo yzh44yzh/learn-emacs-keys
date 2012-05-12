@@ -1,0 +1,46 @@
+h1 {
+    text-align:center;
+}
+
+#intro {
+    display:none;
+}
+
+#select_set {
+    display:none;
+}
+
+#view_set {
+    text-aling:center;
+}
+
+#card {
+    padding:20px;
+    border:1px solid #000;
+    width:440px;
+    margin:0 auto;
+}
+
+#set_title {
+    float:left;
+    margin:0px;
+}
+
+#num_items {
+    float:right;
+}
+
+#info {
+    clear:both;
+    padding:60px;
+    text-align:center;
+}
+
+#info_1 {
+    font-size:xx-large;
+    font-weight:bold;
+}
+
+#controls {
+    text-align:right;
+}

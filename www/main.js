@@ -9,14 +9,14 @@ $(document).ready(function() {
     $("#set_list").html(html);
 });
 
-function switchState(state) {
+function switchState(state, keyFirst) {
     if(state == 'select_set') {
 	$("#intro").css("display", "none");
 	$("#select_set").css("display", "block");
 	$("#view_set").css("display", "none");
     }
     else if(state == 'view_set') {
-	WorkingSet.init(getSelectedSets());
+	WorkingSet.init(getSelectedSets(), keyFirst);
 	$("#intro").css("display", "none");
 	$("#select_set").css("display", "none");
 	$("#view_set").css("display", "block");

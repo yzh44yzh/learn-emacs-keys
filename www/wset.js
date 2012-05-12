@@ -1,18 +1,19 @@
 WorkingSet = {};
 WorkingSet._data = [];
 WorkingSet._current = 0;
+WorkingSet._keyFirst = true;
 WorkingSet._showKey = true;
 
-WorkingSet.init = function(data) {
+WorkingSet.init = function(data, keyFirst) {
     this._data = data;
     this._current = 0;
-    this._showKey = true;
+    this._showKey = this._keyFirst = keyFirst;
     this._render();
 }
 
 WorkingSet.next = function() {
     this._current ++;
-    this._showKey = true;
+    this._showKey = this._keyFirst;
     if(this._current < this._data.length) this._render();
 }
 

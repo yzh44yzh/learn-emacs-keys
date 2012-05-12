@@ -12,6 +12,9 @@
   <h1>Learn You Emacs Keys for Great Good!</h1>
 
   <div id="intro">
+
+    <p style="text-align:center;"><a href="javascript:switchState('select_set');">Skin Intro</a></p>
+
     <h2>Intro</h2>
 
     <p>Есть интересный способ заучивать слова инстранного языка: берется стопка карточек
@@ -51,7 +54,8 @@
       <a href="javascript:switchState('intro');">Back to Intro</a>
     </div>
     <div id="set_list"></div>
-    <input type="button" value="Start" onClick="switchState('view_set');"/>
+    <input type="button" value="Start fun-&gt;key" onClick="switchState('view_set', false);"/>
+    <input type="button" value="Start key-&gt;fun" onClick="switchState('view_set', true);"/>
   </div>
   
   <div id="view_set">

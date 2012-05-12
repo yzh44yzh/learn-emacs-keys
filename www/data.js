@@ -120,7 +120,7 @@ var sets = [
     ]},
 
     {id:"erlang-mode", items:[
-	["M-l",     "indent-for-comment", "insert comment to the end"],
+	["M-l",     "indent-for-comment", "insert comment symbol to the end of line"],
 	["C-c C-q", "erlang-indent-function"],
 	["M-q",     "erlang-fill-paragraph", "in comments"],
 	["C-c C-c", "comment-region"],

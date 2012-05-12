@@ -32,13 +32,23 @@ h1 {
 
 #info {
     clear:both;
-    padding:60px;
+    height:100px;
+    padding-top:60px;
     text-align:center;
 }
 
-#info_1 {
+#info_key {
     font-size:xx-large;
     font-weight:bold;
+}
+
+#info_fun {
+    font-size:large;
+    font-weight:bold;
+}
+
+#info_comment {
+    font-size:small;
 }
 
 #controls {

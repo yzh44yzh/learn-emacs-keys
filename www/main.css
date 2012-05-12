@@ -44,3 +44,9 @@ h1 {
 #controls {
     text-align:right;
 }
+
+#copyright {
+    text-align:center;
+    padding-top:50px;
+    font-size:small;
+}

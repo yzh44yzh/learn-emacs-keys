@@ -12,18 +12,20 @@
   <h1>Learn You Emacs Keys for Great Good!</h1>
 
   <div id="intro">
-    <p>Intro</p>
+    <h2>Intro</h2>
     <a href="javascript:switchState('select_set');">Lets Go</a>
   </div>
   
   <div id="select_set">
-    <a href="javascript:switchState('intro');">Intro</a>
-    <p>Select Set</p>
-    <a href="javascript:switchState('view_set');">Start</a>
+    <div class="navig">
+      <a href="javascript:switchState('intro');">Back to Intro</a>
+    </div>
+    <div id="set_list"></div>
+    <input type="button" value="Start" onClick="switchState('view_set');"/>
   </div>
   
   <div id="view_set">
-    <div id="navig">
+    <div class="navig">
       <a href="javascript:switchState('intro');">Intro</a> &nbsp; &nbsp;
       <a href="javascript:switchState('select_set');">Select Sets</a>
     </div>

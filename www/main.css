@@ -3,18 +3,28 @@ body {
 }
 
 #intro {
+    display:none;
 }
 
 #select_set {
-    display:none;
+    /*display:none;*/
+}
+
+#set_list {
+    width:120px;
+    margin:0 auto;
+    margin-bottom:10px;
+    text-align:left;
+}
+
+#set_list p {
+    margin:0px;
+    padding:0px;
+    margin-bottom:5px;
 }
 
 #view_set {
     display:none;
-}
-
-#navig {
-    margin-bottom:20px;
 }
 
 #card {
@@ -61,3 +71,8 @@ body {
     padding-top:50px;
     font-size:small;
 }
+
+.navig {
+    margin-bottom:20px;
+}
+

@@ -1,4 +1,12 @@
 $(document).ready(function() {
+    var html = "";
+    for(var i = 0; i < sets.length; i++) {
+	var set = sets[i];
+	html += "<p><input type='checkbox' name='ss' id='" + set.id + "' />"
+	    + "<label for='" + set.id + "'>"
+	    + set.id + "</label></p>";
+    }
+    $("#set_list").html(html);
 });
 
 function switchState(state) {
@@ -8,12 +16,12 @@ function switchState(state) {
 	$("#view_set").css("display", "none");
     }
     else if(state == 'view_set') {
+	WorkingSet.init(showSelectedSets());
 	$("#intro").css("display", "none");
 	$("#select_set").css("display", "none");
 	$("#view_set").css("display", "block");
     }
     else {
-	WorkingSet.init(showSelectedSets());
 	$("#intro").css("display", "block");
 	$("#select_set").css("display", "none");
 	$("#view_set").css("display", "none");

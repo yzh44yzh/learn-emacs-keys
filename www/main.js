@@ -2,8 +2,8 @@ $(document).ready(function() {
     var html = "";
     for(var i = 0; i < sets.length; i++) {
 	var set = sets[i];
-	html += "<p><input type='checkbox' name='ss' id='" + set.id + "' />"
-	    + "<label for='" + set.id + "'>"
+	html += "<p><input type='checkbox' id='ch_" + set.id + "' />"
+	    + "<label for='ch_" + set.id + "'>"
 	    + set.id + "</label></p>";
     }
     $("#set_list").html(html);
@@ -16,7 +16,7 @@ function switchState(state) {
 	$("#view_set").css("display", "none");
     }
     else if(state == 'view_set') {
-	WorkingSet.init(showSelectedSets());
+	WorkingSet.init(getSelectedSets());
 	$("#intro").css("display", "none");
 	$("#select_set").css("display", "none");
 	$("#view_set").css("display", "block");
@@ -28,17 +28,22 @@ function switchState(state) {
     }
 }
 
-function showSelectedSets() {
+function getSelectedSets() {
     var temp = [];
     for(var i = 0; i < sets.length; i++) {
 	var set = sets[i];
+	if(! $("#ch_" + set.id).attr("checked") ) continue;
 	for(var j = 0; j < set.items.length; j++) {
-	    if(set.id != "erlang-mode" && set.id != "Minibuffer") continue;
 	    var item = set.items[j];
 	    var nItem = item.slice(0);
 	    nItem.unshift(set.id);
 	    temp.push(nItem);
 	}
+    }
+    
+    if(temp.length == 0) {
+	$("#ch_" + sets[0].id).attr("checked", "checked");
+	return getSelectedSets();
     }
 
     return shuffle(temp);

@@ -1,5 +1,5 @@
 var sets = [
-    {id:"Basic Set", items:[
+    {id:"basic-set", items:[
 	["C-g",     "keyboard-quit", "abort action, quit"],
 	["C-u",     "universal-argument", "set argument for command"],
 	["M-x",     "execute-extended-command", "run command"],
@@ -47,7 +47,7 @@ var sets = [
 	["C-M \\",  "indent-region"]
     ]},
 
-    {id:"Advanced Set", items:[
+    {id:"advanced-set", items:[
 	["C-l",      "recenter-top-bottom"],
 	["C-M-v",    "scroll-other-window"],
 	["C-M-a",    "beginning-of-defun"],
@@ -96,7 +96,7 @@ var sets = [
 	["C-M-x",    "eval-defun"]
     ]},
 
-    {id:"Guru Set", items:[
+    {id:"guru-set", items:[
 	["C-x z",   "repeat"],
 	["M-{",     "backward-paragraph"],
 	["M-}",     "forward-paragraph"],
@@ -140,7 +140,7 @@ var sets = [
 	["C-x `",   "erlang-next-error"]
     ]},
 
-    {id:"Minibuffer", items:[
+    {id:"minibuffer", items:[
 	["C-g", "quit"],
 	["C-o", "open-line"],
 	["M-p", "previous-history-element"],
@@ -154,7 +154,7 @@ var sets = [
 	["C-x ESC ESC", "repeat-complex-command"]
     ]},
 
-    {id:"Help", items:[
+    {id:"help", items:[
 	["C-h t", "help-with-tutorial"],
 	["C-h C-h", "help-for-help"],
 	["C-h a", "apropos-command"],

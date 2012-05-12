@@ -13,10 +13,11 @@ body {
 }
 
 #set_list {
-    width:120px;
+    width:150px;
     margin:0 auto;
-    margin-bottom:10px;
+    margin-bottom:15px;
     text-align:left;
+    font-size:large;
 }
 
 #set_list p {
@@ -31,9 +32,13 @@ body {
 
 #card {
     padding:20px;
-    border:1px solid #000;
+    border-top:1px solid #d4b25f;
+    border-left:1px solid #d4b25f;
+    border-bottom:2px solid #9f8137;
+    border-right:2px solid #9f8137;
     width:440px;
     margin:0 auto;
+    background-color:#f4d68f;
 }
 
 #set_title {

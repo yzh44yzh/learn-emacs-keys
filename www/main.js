@@ -4,7 +4,7 @@ $(document).ready(function() {
 	var set = sets[i];
 	html += "<p><input type='checkbox' id='ch_" + set.id + "' />"
 	    + "<label for='ch_" + set.id + "'>"
-	    + set.id + "</label></p>";
+	    + set.id + " (" + set.items.length + ")</label></p>";
     }
     $("#set_list").html(html);
 });

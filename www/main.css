@@ -1,9 +1,8 @@
-h1 {
+body {
     text-align:center;
 }
 
 #intro {
-    display:none;
 }
 
 #select_set {
@@ -11,7 +10,11 @@ h1 {
 }
 
 #view_set {
-    text-aling:center;
+    display:none;
+}
+
+#navig {
+    margin-bottom:20px;
 }
 
 #card {
@@ -34,7 +37,6 @@ h1 {
     clear:both;
     height:100px;
     padding-top:60px;
-    text-align:center;
 }
 
 #info_key {
@@ -56,7 +58,6 @@ h1 {
 }
 
 #copyright {
-    text-align:center;
     padding-top:50px;
     font-size:small;
 }

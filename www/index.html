@@ -13,13 +13,20 @@
 
   <div id="intro">
     <p>Intro</p>
+    <a href="javascript:switchState('select_set');">Lets Go</a>
   </div>
   
   <div id="select_set">
+    <a href="javascript:switchState('intro');">Intro</a>
     <p>Select Set</p>
+    <a href="javascript:switchState('view_set');">Start</a>
   </div>
   
   <div id="view_set">
+    <div id="navig">
+      <a href="javascript:switchState('intro');">Intro</a> &nbsp; &nbsp;
+      <a href="javascript:switchState('select_set');">Select Sets</a>
+    </div>
     <div id="card">
       <div id="set_title">Basic Set</div>
       <div id="num_items">34/52</div>

@@ -1,6 +1,24 @@
 $(document).ready(function() {
-    WorkingSet.init(showSelectedSets());
 });
+
+function switchState(state) {
+    if(state == 'select_set') {
+	$("#intro").css("display", "none");
+	$("#select_set").css("display", "block");
+	$("#view_set").css("display", "none");
+    }
+    else if(state == 'view_set') {
+	$("#intro").css("display", "none");
+	$("#select_set").css("display", "none");
+	$("#view_set").css("display", "block");
+    }
+    else {
+	WorkingSet.init(showSelectedSets());
+	$("#intro").css("display", "block");
+	$("#select_set").css("display", "none");
+	$("#view_set").css("display", "none");
+    }
+}
 
 function showSelectedSets() {
     var temp = [];

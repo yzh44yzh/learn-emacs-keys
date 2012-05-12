@@ -3,11 +3,13 @@ body {
 }
 
 #intro {
-    display:none;
+    width:600px;
+    margin:0 auto;
+    text-align:left;
 }
 
 #select_set {
-    /*display:none;*/
+    display:none;
 }
 
 #set_list {

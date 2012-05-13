@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <meta charset='utf-8'/>
-  <title>Learn You Emacs Keys for Great Good!</title>
+  <title>Изучаем шоткаты emacs во имя добра!</title>
   <link rel="stylesheet" href="main.css">
   <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
   <script type="text/javascript" src="data.js"></script>
@@ -9,14 +9,14 @@
   <script type="text/javascript" src="main.js"></script>
 </html>
 <body>
-  <h1>Learn You Emacs Keys for Great Good!</h1>
+  <h1>Изучаем шоткаты emacs во имя добра!</h1>
 
   <div id="intro">
 
-    <p style="float:left;"><a href="javascript:switchState('select_set');">Skin Intro</a></p>
-    <p style="float:right;">English | <a href="index.ru.html">Русский</a></p>
+    <p style="float:left;"><a href="javascript:switchState('select_set');">Пропустить вступление</a></p>
+    <p style="float:right;"><a href="index.html">English</a> | Русский</p>
 
-    <h2 style="clear:both;">Intro</h2>
+    <h2 style="clear:both;">Вступление</h2>
 
     <p>Есть интересный способ заучивать слова инстранного языка: берется стопка карточек
       размером примерно со спичечный коробок. На одной стороне карточки пишется слово
@@ -46,23 +46,23 @@
     <p>Команды разбиты на несколько сетов, и можно взять для изучения один или
       сразу несколько из них.</p>
 
-    <p style="text-align:center;"><a href="javascript:switchState('select_set');">Lets Go :)</a></p>
+    <p style="text-align:center;"><a href="javascript:switchState('select_set');">Вперед :)</a></p>
 
   </div>
   
   <div id="select_set">
     <div class="navig">
-      <a href="javascript:switchState('intro');">Back to Intro</a>
+      <a href="javascript:switchState('intro');">Вернуться к вступлению</a>
     </div>
     <div id="set_list"></div>
-    <input type="button" value="Start fun-&gt;key" onClick="switchState('view_set', false);"/>
-    <input type="button" value="Start key-&gt;fun" onClick="switchState('view_set', true);"/>
+    <input type="button" value="Изучать fun-&gt;key" onClick="switchState('view_set', false);"/>
+    <input type="button" value="Изучать key-&gt;fun" onClick="switchState('view_set', true);"/>
   </div>
   
   <div id="view_set">
     <div class="navig">
-      <a href="javascript:switchState('intro');">Intro</a> &nbsp; &nbsp;
-      <a href="javascript:switchState('select_set');">Select Sets</a>
+      <a href="javascript:switchState('intro');">Вступление</a> &nbsp; &nbsp;
+      <a href="javascript:switchState('select_set');">Выбрать набор</a>
     </div>
     <div id="card">
       <div id="set_title">Basic Set</div>
@@ -73,13 +73,13 @@
 	<div id="info_comment">comment</div>
       </div>
       <div id="controls">
-	<a href="javascript:WorkingSet.flip();">Flip</a> &nbsp; &nbsp;
-	<a href="javascript:WorkingSet.remind();">Remind</a> &nbsp; &nbsp;
-	<a href="javascript:WorkingSet.next();">Next</a>
+	<a href="javascript:WorkingSet.flip();">Перевернуть</a> &nbsp; &nbsp;
+	<a href="javascript:WorkingSet.remind();">Напомнить</a> &nbsp; &nbsp;
+	<a href="javascript:WorkingSet.next();">Дальше</a>
       </div>
     </div>
   </div>
 
   <div id="copyright">
-    <a href="https://plus.google.com/u/0/111796213623287288776/about" target="_blank">Yuri Zhloba</a> aka yzh44yzh
+    <a href="https://plus.google.com/u/0/111796213623287288776/about" target="_blank">Юра Жлоба</a> aka yzh44yzh
 </body>

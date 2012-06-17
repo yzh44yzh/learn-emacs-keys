@@ -29,6 +29,12 @@ WorkingSet.remind = function() {
     this._render();
 }
 
+WorkingSet.repeat = function() {
+    this._current = 0;
+    this._data = shuffle(this._data);
+    this._render();
+}
+
 WorkingSet._render = function() {
     var item = this._data[this._current];
     $("#set_title").html(item[0]);
@@ -44,4 +50,8 @@ WorkingSet._render = function() {
 	$("#info_fun").html(item[2]);
 	$("#info_comment").html(item.length > 3 ? item[3] : "");
     }
+
+    var end = ((this._current + 1) == this._data.length);
+    $("#controls").css("display", end ? "none" : "block");
+    $("#end_controls").css("display", end ? "block" : "none");
 }

@@ -1,6 +1,4 @@
-body {
-    text-align:center;
-}
+body {text-align:center;}
 
 #intro {
     width:600px;
@@ -8,12 +6,10 @@ body {
     text-align:left;
 }
 
-#select_set {
-    display:none;
-}
+#select_set {display:none;}
 
 #set_list {
-    width:150px;
+    width:190px;
     margin:0 auto;
     margin-bottom:15px;
     text-align:left;
@@ -26,9 +22,7 @@ body {
     margin-bottom:5px;
 }
 
-#view_set {
-    display:none;
-}
+#view_set {display:none;}
 
 #card {
     padding:20px;
@@ -46,9 +40,7 @@ body {
     margin:0px;
 }
 
-#num_items {
-    float:right;
-}
+#num_items {float:right;}
 
 #info {
     clear:both;
@@ -66,20 +58,16 @@ body {
     font-weight:bold;
 }
 
-#info_comment {
-    font-size:small;
-}
+#info_comment {font-size:small;}
 
-#controls {
-    text-align:right;
-}
+#controls {text-align:right;}
+
+#end_controls {text-align:right;}
 
 #copyright {
     padding-top:50px;
     font-size:small;
 }
 
-.navig {
-    margin-bottom:20px;
-}
+.navig {margin-bottom:20px;}
 

@@ -49,6 +49,7 @@ var sets = [
 
     {id:"advanced-set", items:[
 	["C-l",      "recenter-top-bottom"],
+	["M-r",      "move-to-window-line-top-bottom", "position point relative to window"],
 	["C-M-v",    "scroll-other-window"],
 	["C-M-a",    "beginning-of-defun"],
 	["C-M-e",    "end-of-defun"],
@@ -114,9 +115,12 @@ var sets = [
 	["M-!",     "shell-command"],
 	["M-|",     "shell-command-on-region"],
 	["C-x =",   "what-cursor-position"],
-	["C-q",     "quoted-insert"],
+	["C-q",     "quoted-insert", "insert a non-graphic character"],
+	["C-x 8 RET", "ucs-insert", "insert a character based on its Unicode name or code-point"],
 	["C-x C-n", "set-goal-column"],
-	["C-M-w",   "append-next-kill"]
+	["C-M-w",   "append-next-kill"],
+	["C-x l",   "count-lines-page", "report number of lines on current page"],
+	["M-=",     "count-lines-region", "print number of lines and characters in the region"]
     ]},
 
     {id:"erlang-mode", items:[

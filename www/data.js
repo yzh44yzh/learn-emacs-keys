@@ -99,6 +99,27 @@ var sets = [
 	["C-M-x",    "eval-defun"]
     ]},
 
+    {id:"erlang-mode", items:[
+	["M-l",     "indent-for-comment", "insert comment symbol to the end of line"],
+	["C-c C-q", "erlang-indent-function"],
+	["M-q",     "erlang-fill-paragraph", "in comments"],
+	["C-c C-c", "comment-region"],
+	["C-c C-u", "undo comment-region"],
+	["C-a M-a", "erlang-beginning-of-function"],
+	["C-a M-e", "erlang-end-of-function"],
+	["C-M-a",   "erlang-beginning-of-clause"],
+	["C-M-e",   "erlang-end-of-clause"],
+	["C-c M-h", "erlang-mark-function"],
+	["C-M-h",   "erlang-mark-clause"],
+	["C-c C-j", "erlang-generate-new-clause"],
+	["C-c C-y", "erlang-clone-arguments"],
+	["C-c C-a", "erlang-align-arrows"],
+	["C-c C-z", "erlang-shell-display"],
+	["C-c C-k", "erlang-compile"],
+	["C-c C-l", "erlang-compile-display"],
+	["C-x `",   "erlang-next-error"]
+    ]},
+
     {id:"guru-set", items:[
 	["C-x z",   "repeat"],
 	["M-{",     "backward-paragraph"],
@@ -123,27 +144,6 @@ var sets = [
 	["C-M-w",   "append-next-kill"],
 	["C-x l",   "count-lines-page", "report number of lines on current page"],
 	["M-=",     "count-lines-region", "print number of lines and characters in the region"]
-    ]},
-
-    {id:"erlang-mode", items:[
-	["M-l",     "indent-for-comment", "insert comment symbol to the end of line"],
-	["C-c C-q", "erlang-indent-function"],
-	["M-q",     "erlang-fill-paragraph", "in comments"],
-	["C-c C-c", "comment-region"],
-	["C-c C-u", "undo comment-region"],
-	["C-a M-a", "erlang-beginning-of-function"],
-	["C-a M-e", "erlang-end-of-function"],
-	["C-M-a",   "erlang-beginning-of-clause"],
-	["C-M-e",   "erlang-end-of-clause"],
-	["C-c M-h", "erlang-mark-function"],
-	["C-M-h",   "erlang-mark-clause"],
-	["C-c C-j", "erlang-generate-new-clause"],
-	["C-c C-y", "erlang-clone-arguments"],
-	["C-c C-a", "erlang-align-arrows"],
-	["C-c C-z", "erlang-shell-display"],
-	["C-c C-k", "erlang-compile"],
-	["C-c C-l", "erlang-compile-display"],
-	["C-x `",   "erlang-next-error"]
     ]},
 
     {id:"minibuffer", items:[
@@ -182,10 +182,46 @@ var sets = [
 	["C-x C-p",   "mark-page"],
 	["C-x h",     "mark-whole-buffer"],
 	["C-x C-SPC", "global-pop-mark", "jump to last mark in global mark ring"]
+    ]},
+
+    {id:"killing-and-moving-text", items:[
+	["C-d",      "delete-char"],
+	["DEL",      "delete-backward-char"],
+	["M-\\",     "delete-horizontal-space"],
+	["M-SPC",    "just-one-space"],
+	["C-x C-o",  "delete-blank-lines"],
+	["M-^",      "delete-indentation"],
+	["C-k",      "kill-line"],
+	["C-S-DEL",  "kill-whole-line"],
+	["C-w",      "kill-region"],
+	["M-w",      "kill-ring-save", "copy region"],
+	["M-d",      "kill-word"],
+	["M-DEL",    "backward-kill-word"],
+	["C-x DEL",  "backward-kill-sentence"],
+	["M-k",      "kill-sentence"],
+	["C-M-k",    "kill-sexp"],
+	["M-z char", "zap-to-char"],
+	["C-y",      "yank"],
+	["M-y",      "yank-pop"],
+	["C-M-w",    "append-next-kill"]
+    ]},
+
+    {id:"registers-and-bookmarks", items:[
+	["C-x r SPC reg",   "point-to-register", "copy postion to register"],
+	["C-x r j reg",   "jump-to-register"],
+	["C-x r s reg",   "copy-to-register", "copy region to register"],
+	["C-x r i reg",   "insert-register", "insert text from register"],
+	["C-x r m",   "bookmark-set", "set bookmark at a point"],
+	["C-x r b name",   "bookmark-jump"],
+	["C-x r l",   "list-bookmarks"]
     ]}
 
     /*
     {id:"", items:[
+	["",   ""],
+	["",   ""],
+	["",   ""],
+	["",   ""],
     ]}
     */
 ];

@@ -86,6 +86,8 @@ var sets = [
 	["M-u",      "upcase-word"],
 	["M-l",      "downcase-word"],
 	["M-c",      "capitalize-word"],
+	["C-x C-u",  "upcase-region"],
+	["C-x C-l",  "downcase-region"],
 	["C-t",      "transpose-char"],
 	["M-t",      "transpose-words"],
 	["C-x C-t",  "transpose-lines"],
@@ -168,15 +170,23 @@ var sets = [
 	["C-h m", "describe-mode"],
 	["C-h v", "describe-variable"],
 	["C-h .", "display-local-help"]
+    ]},
+
+    {id:"mark-and-region", items:[
+	["C-SPC",     "set-mark-command"],
+	["C-x C-x",   "exchange-point-and-mark"],
+	["M-@",       "mark-word"],
+	["C-M-@",     "mark-sexp"],
+	["M-h",       "mark-paragraph"],
+	["C-M-h",     "mark-defun"],
+	["C-x C-p",   "mark-page"],
+	["C-x h",     "mark-whole-buffer"],
+	["C-x C-SPC", "global-pop-mark", "jump to last mark in global mark ring"]
     ]}
 
     /*
-    // Registers  page 81
     {id:"", items:[
-    ]},
-
-    {id:"", items:[
-    ]},
+    ]}
     */
 ];
 

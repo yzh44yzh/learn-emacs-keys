@@ -64,7 +64,7 @@
   <div id="view_set">
     <div class="navig">
       <a href="javascript:switchState('intro');">Intro</a> &nbsp; &nbsp;
-      <a href="javascript:switchState('select_set');">Select Sets</a>
+      <a href="javascript:switchState('select_set');">Select Set</a>
     </div>
     <div id="card">
       <div id="set_title">Basic Set</div>
@@ -80,7 +80,8 @@
 	<a href="javascript:WorkingSet.next();">Next</a>
       </div>
       <div id="end_controls">
-	<a href="javascript:switchState('select_set');">Back</a> &nbsp; &nbsp;
+	<a href="javascript:WorkingSet.flip();">Flip</a> &nbsp; &nbsp;
+	<a href="javascript:switchState('select_set');">Select Set</a> &nbsp; &nbsp;
 	<a href="javascript:WorkingSet.repeat();">Repeat</a>
       </div>
     </div>

@@ -213,6 +213,27 @@ var sets = [
 	["C-x r m",   "bookmark-set", "set bookmark at a point"],
 	["C-x r b name",   "bookmark-jump"],
 	["C-x r l",   "list-bookmarks"]
+    ]},
+
+    {id:"searching-and-replacement", items:[
+	["C-s",   "isearch-forward"],
+	["C-r",   "isearch-backward"],
+	["C-s RET string RET", "search-forward", "non incremental search"],
+	["C-r RET string RET", "search-backward", "non incremental search"],
+	["M-s w",   "isearch-forward-word", "search a sequence of words without regard to how the words are separated"],
+	["C-M-s",   "isearch-forward-regexp"],
+	["C-M-r",   "isearch-backward-regexp"],
+	["M-%",     "query-replace"],
+	["C-M-%",   "query-replace-regexp"],
+	["SPC (y)", "replace this one, go on to next", "in query-replace mode"],
+	["DEL (n)", "skip to next without replacing", "in query-replace mode"],
+	["comma",   "replace this one and stay here", "in query-replace mode"],
+	["period",  "replace this one and exit", "in query-replace mode"],
+	["!",       "replace all remaining matches", "in query-replace mode"],
+	["^",       "back up to previous match", "in query-replace mode"],
+	["RET (q)", "exit", "in query-replace mode"],
+	["e",       "edit replacement string in minibuffer", "in query-replace mode"],
+	["C-h",     "help", "in query-replace mode"]
     ]}
 
     /*

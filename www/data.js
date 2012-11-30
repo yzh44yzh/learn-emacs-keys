@@ -119,6 +119,34 @@ var sets = [
 	["C-x `",   "erlang-next-error"]
     ]},
 
+    {id:"distel", items:[
+        ["C-c C-d n", "erl-choose-nodename"],
+        ["C-c C-d g", "erl-ping"],
+        ["M-?",       "erl-complete"],
+        ["M-.",       "erl-find-source-under-point"],
+        ["M-,",       "erl-find-source-unwind"],
+        ["C-c C-d F", "erl-find-module"],
+        ["C-c C-d w", "erl-who-calls"],
+        ["C-c C-d L", "erl-reload-module"],
+        ["C-c C-d r", "erl-reload-modules"],
+        ["C-c C-d e", "erl-ie-show-session", "interactive shell"],
+        ["C-c C-d :", "erl-eval-expression"],
+        ["C-c C-d f", "erl-refactor-subfunction"],
+        ["C-c C-d A", "erl-show-arglist"],
+        ["C-c C-d h", "erl-find-doc-under-point"],
+        ["C-c C-d H", "erl-find-doc"],
+        ["C-c C-d z", "erl-find-sig-under-point"],
+        ["C-c C-d Z", "erl-find-sig"],
+        ["C-c C-d d", "erl-fdoc-describe"],
+        ["C-c C-d a", "erl-fdoc-apropos"],
+        ["C-c C-d l", "erl-process-list"],
+        ["C-c C-d m", "edb-monitor"],          
+        ["C-c C-d p", "fprof"],
+        ["C-c C-d P", "fprof-analyse"],
+	["", ""]
+    ]},
+
+
     {id:"guru-set", items:[
 	["C-x z",   "repeat"],
 	["M-{",     "backward-paragraph"],

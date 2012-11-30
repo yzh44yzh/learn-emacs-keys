@@ -2,6 +2,7 @@
 <html>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <title>Learn You Emacs Keys for Great Good!</title>
+  <link rel="stylesheet" href="twitter-bootstrap.css">
   <link rel="stylesheet" href="main.css">
   <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
   <script type="text/javascript" src="data.js"></script>
@@ -57,8 +58,8 @@
       <a href="javascript:switchState('intro');">Back to Intro</a>
     </div>
     <div id="set_list"></div>
-    <input type="button" value="Start fun-&gt;key" onClick="switchState('view_set', false);"/>
-    <input type="button" value="Start key-&gt;fun" onClick="switchState('view_set', true);"/>
+    <a class="btn btn-primary" onClick="switchState('view_set', false);">Start Fun-&gt;Key</a>
+    <a class="btn btn-primary" onClick="switchState('view_set', true);">Start Key-&gt;Fun</a>
   </div>
   
   <div id="view_set">

@@ -1,5 +1,9 @@
 body {text-align:center;}
 
+label {
+    display:inline;
+}
+
 #intro {
     width:600px;
     margin:0 auto;
@@ -9,7 +13,7 @@ body {text-align:center;}
 #select_set {display:none;}
 
 #set_list {
-    width:250px;
+    width:280px;
     margin:0 auto;
     margin-bottom:15px;
     text-align:left;
@@ -25,14 +29,23 @@ body {text-align:center;}
 #view_set {display:none;}
 
 #card {
-    padding:20px;
-    border-top:1px solid #d4b25f;
-    border-left:1px solid #d4b25f;
-    border-bottom:2px solid #9f8137;
-    border-right:2px solid #9f8137;
     width:440px;
+    padding:20px;
     margin:0 auto;
-    background-color:#f4d68f;
+  background-color: #ffffff;
+  border: 1px solid #ccc;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  *border-right-width: 2px;
+  *border-bottom-width: 2px;
+  -webkit-border-radius: 6px;
+     -moz-border-radius: 6px;
+          border-radius: 6px;
+  -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+     -moz-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  -webkit-background-clip: padding-box;
+     -moz-background-clip: padding;
+          background-clip: padding-box;
 }
 
 #set_title {

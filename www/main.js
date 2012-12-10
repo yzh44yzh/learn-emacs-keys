@@ -6,10 +6,22 @@ $(document).ready(function() {
 	    + "<label for='ch_" + set.id + "'>"
 	    + set.id + " (" + set.items.length + ")</label></p>";
     }
+
+    keymage('intro', 's', function() { switchState('select_set', false); });
+    keymage('select_set', 'f', function() { switchState('view_set', false); });
+    keymage('select_set', 'k', function() { switchState('view_set', true); });
+    keymage('view_set', 'f', function() { WorkingSet.flip(); });
+    keymage('view_set', 'r', function() { WorkingSet.remind(); });
+    keymage('view_set', 'n', function() { WorkingSet.next(); });
+    keymage('view_set', 'a', function() { WorkingSet.repeat(); });
+    keymage('view_set', 's', function() { switchState('select_set'); });
+    keymage.setScope('intro');
+
     $("#set_list").html(html);
 });
 
 function switchState(state, keyFirst) {
+    keymage.setScope(state);
     if(state == 'select_set') {
 	$("#intro").css("display", "none");
 	$("#select_set").css("display", "block");
@@ -22,6 +34,7 @@ function switchState(state, keyFirst) {
 	$("#view_set").css("display", "block");
     }
     else {
+        keymage.setScope('intro');
 	$("#intro").css("display", "block");
 	$("#select_set").css("display", "none");
 	$("#view_set").css("display", "none");

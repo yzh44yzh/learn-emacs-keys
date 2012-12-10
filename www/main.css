@@ -77,8 +77,12 @@ label {
 
 #end_controls {text-align:right;}
 
+#hotkeys {
+    padding-top:40px;
+}
+
 #copyright {
-    padding-top:50px;
+    padding-top:40px;
     font-size:small;
 }
 

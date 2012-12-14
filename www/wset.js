@@ -42,14 +42,14 @@ WorkingSet._render = function() {
     $("#num_items").html((this._current + 1) + "/" + this._data.length);
     
     if(this._showKey) {
-	$("#info_key").html(item[1]);
-	$("#info_fun").html("");
-	$("#info_comment").html("");
+	    $("#info_key").html(item[1]);
+	    $("#info_fun").html("");
+	    $("#info_comment").html("");
     }
     else {
-	$("#info_key").html("");
-	$("#info_fun").html(item[2]);
-	$("#info_comment").html(item.length > 3 ? item[3] : "");
+	    $("#info_key").html("");
+	    $("#info_fun").html(item[2]);
+	    $("#info_comment").html(item.length > 3 ? item[3] : "");
     }
 
     var end = ((this._current + 1) == this._data.length);

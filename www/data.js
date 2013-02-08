@@ -95,7 +95,10 @@ var sets = [
 	    ["M-/",      "dabbrev-expand", "expand word, autocomplete"],
 	    ["M-g g",    "goto-line"],
 	    ["C-x C-e",  "eval-last-sexp"],
-	    ["C-M-x",    "eval-defun"]
+	    ["C-M-x",    "eval-defun"],
+        ["C-x (", "kmacro-start-macro"],
+        ["C-x )", "kmacro-end-macro"],
+        ["C-x e", "kmacro-end-and-call-macro"]
     ]},
 
     {id:"erlang-mode", items:[

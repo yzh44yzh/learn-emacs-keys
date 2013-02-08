@@ -146,6 +146,32 @@ var sets = [
 	    ["", ""]
     ]},
 
+    {id:"objc-mode", items:[
+        ["C-c C-a",    "c-toggle-auto-newline"],
+        ["C-c C-c",    "comment-region"],
+        ["C-c C-d",    "c-hungry-delete-forward"],
+        ["C-c C-DEL",  "c-hungry-delete-backward"],
+        ["C-c C-e",    "c-macro-expand"],
+        ["C-c C-l",    "c-toggle-electric-state"],
+        ["C-c C-n",    "c-forward-conditional"],
+        ["C-c C-p",    "c-backward-conditional"],
+        ["C-c C-u",    "c-up-conditional"],
+        ["C-c C-o",    "c-set-offset"],
+        ["C-c C-q",    "c-indent-defun"],
+        ["C-c C-s",    "c-show-syntactic-information"],
+        ["C-c C-w",    "subword-mode"],
+        ["C-c C-\\",   "c-backslash-region"],
+        ["C-c .",      "c-set-style"],
+        ["C-M-a",      "c-beginning-of-defun"],
+        ["C-M-e",      "c-end-of-defun"],
+        ["C-M-h",      "c-mark-function"],
+        ["C-M-j",      "c-indent-new-comment-line"],
+        ["C-M-q",      "c-indent-exp"],
+        ["M-a",        "c-beginning-of-statement"],
+        ["M-e",        "c-end-of-statement"],
+        ["M-j",        "c-indent-new-comment-line"],
+        ["M-q",        "c-fill-paragraph"]
+    ]},
 
     {id:"guru-set", items:[
 	    ["C-x z",   "repeat"],
@@ -296,7 +322,6 @@ var sets = [
       ]}
     */
 ];
-
 
 
 
